@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Приветствие
+{% endblock %}
+{% block content%}
+  
+    <h1 style="color: green;">Приветствую   {{user}} </h1>
+      
+    <h3 style="color: rgb(40, 198, 219);"> Печеньки созданы </h3> 
+    <a href="{{url_for('dell_cookie')}}"><button type="button" class="btn btn-primary">Удалить куки</button></a>
+{% endblock %}
